@@ -40,6 +40,9 @@
 ############  extension settings  ##############
 
 overwriteSettings:
+  # uncomment if you don't want an empty git repository to be created
+  #.git: skip
+
   Classes:
     Controller: merge
     Domain:

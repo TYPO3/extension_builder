@@ -206,8 +206,6 @@ class FileGenerator
             GeneralUtility::mkdir($this->extensionDirectory);
         }
 
-        $this->generateGitIgnore();
-
         $this->generateComposerJson();
 
         GeneralUtility::mkdir_deep($this->extensionDirectory, 'Configuration');
@@ -240,7 +238,11 @@ class FileGenerator
             $this->generateDocumentationFiles();
         }
 
-        $this->generateEmptyGitRepository();
+        $extensionSettings = $extension->getSettings();
+        if ($extensionSettings['overwriteSettings']['.git'] ?? false) {
+            $this->generateEmptyGitRepository();
+            $this->generateGitIgnore();
+        }
     }
 
     protected function generateYamlSettingsFile()
