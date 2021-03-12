@@ -214,6 +214,7 @@ class ClassBuilderTest extends BaseUnitTest
             'nativeTime' => ['nativeTime', null],
             'time' => ['time', 0],
             'timeSec' => ['timeSec', 0],
+            'slug' => ['slug', ''],
         ];
     }
 
