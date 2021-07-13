@@ -62,6 +62,16 @@ extbaseModeling_wiringEditorLanguage.modules.push({
               }
             },
             {
+                type: 'string',
+                inputParams: {
+                    name: 'tableName',
+                    advancedMode: true,
+                    label: TYPO3.settings.extensionBuilder._LOCAL_LANG.tableName,
+                    description: TYPO3.settings.extensionBuilder._LOCAL_LANG.descr_tableName,
+                    required: false
+                }
+            },
+            {
               type: 'boolean',
               inputParams: {
                 name: 'sorting',

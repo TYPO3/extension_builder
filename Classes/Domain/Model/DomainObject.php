@@ -46,6 +46,12 @@ class DomainObject
      */
     protected $aggregateRoot = false;
     /**
+     * If not empty, then this should be used as the table name.
+     *
+     * @var string
+     */
+    protected $tableName = '';
+    /**
      * If true, the element is sortable in the TYPO3 backend.
      *
      * @var bool
@@ -200,6 +206,16 @@ class DomainObject
     public function setAggregateRoot(bool $aggregateRoot): void
     {
         $this->aggregateRoot = $aggregateRoot;
+    }
+
+    public function getTableName(): string
+    {
+        return $this->tableName;
+    }
+
+    public function setTableName(string $tableName): void
+    {
+        $this->tableName = $tableName;
     }
 
     /**

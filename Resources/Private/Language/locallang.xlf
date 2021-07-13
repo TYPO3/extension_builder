@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:extension_builder/Resources/Private/Language/locallang.xlf" date="2012-02-29T20:52:35Z"
+<file source-language="en" datatype="plaintext" original="EXT:extension_builder/Resources/Private/Language/locallang.xlf" date="2012-02-29T20:52:35Z"
 		  product-name="extension_builder">
 		<header/>
 		<body>
@@ -336,6 +336,12 @@
 			</trans-unit>
 			<trans-unit id="descr_mapToTable" resname="descr_mapToTable">
 				<source>If the model should extend an existing table, you can configure this here</source>
+			</trans-unit>
+			<trans-unit id="tableName" resname="tableName">
+				<source>Table name for the domain</source>
+			</trans-unit>
+			<trans-unit id="descr_tableName" resname="descr_tableName">
+				<source>If you want to use a different selfdefined name for your table than the default one which the extension builder normally generates based on the domain name.</source>
 			</trans-unit>
 			<trans-unit id="parentClass" resname="parentClass">
 				<source>Extend existing model class</source>
