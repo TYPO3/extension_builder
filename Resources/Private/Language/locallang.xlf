@@ -445,6 +445,9 @@
 			<trans-unit id="password" resname="password">
 				<source>Password</source>
 			</trans-unit>
+			<trans-unit id="slug" resname="slug">
+				<source>Slug</source>
+			</trans-unit>
 			<trans-unit id="allowedFileTypes" resname="allowedFileTypes">
 				<source>Allowed file types</source>
 			</trans-unit>
